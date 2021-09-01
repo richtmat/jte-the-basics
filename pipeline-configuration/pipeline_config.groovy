@@ -1,3 +1,4 @@
 @merge libraries{
+    maven
     sonarqube
 }
