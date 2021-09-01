@@ -1,8 +1,18 @@
 pipeline {
   agent any
   stages {
-    build()
-    static_code_analysis()
+    stage("Build") {
+      steps {
+        build()
+      }
+    }
+    stage("Analysis") {
+      steps {
+        static_code_analysis()    
+      }
+    }
+    
+    
     
   }
 }
