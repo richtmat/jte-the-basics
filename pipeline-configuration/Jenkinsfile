@@ -1,14 +1,7 @@
 pipeline {
   stages {
-    stage {
-      steps {
-        build()
-      }
-    }
-    stage {
-      steps {
-        static_code_analysis()
-      }
-    }
+    build()
+    static_code_analysis()
+    
   }
 }
