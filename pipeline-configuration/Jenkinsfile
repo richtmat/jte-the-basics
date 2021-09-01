@@ -2,15 +2,13 @@ pipeline {
   agent any
   stages {
     stage("Build") {
-      steps {
-        echo "234"
+      steps {        
         build()    
       }
     }
 
     stage("Analysis") {
-      steps {
-        echo "234"
+      steps {        
         static_code_analysis()    
       }
     }
