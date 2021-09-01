@@ -1,2 +1,7 @@
-build()
-static_code_analysis()
+pipeline {
+  stages {
+    build()
+    static_code_analysis()
+  }
+  
+}
