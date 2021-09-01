@@ -1,4 +1,5 @@
 pipeline {
+  agent any
   stages {
     build()
     static_code_analysis()
