@@ -4,13 +4,13 @@ pipeline {
     stage("Build") {
       steps {
         echo " echo pipelineConfig.message " 
-        //build()
+        build()
       }
     }
     stage("Analysis") {
       steps {
         echo "234"
-        //static_code_analysis()    
+        static_code_analysis()    
       }
     }
     
