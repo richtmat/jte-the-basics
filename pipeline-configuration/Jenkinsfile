@@ -3,12 +3,13 @@ pipeline {
   stages {
     stage("Build") {
       steps {
-        echo pipelineConfig.message 
+        echo " echo pipelineConfig.message " 
         //build()
       }
     }
     stage("Analysis") {
       steps {
+        echo "234"
         //static_code_analysis()    
       }
     }
